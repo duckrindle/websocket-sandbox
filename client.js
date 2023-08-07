@@ -22,4 +22,11 @@ client.on('connect', function(connection) {
     });
 });
 
-client.connect('ws://localhost:3000/', 'echo-protocol');
+//client.connect('ws://localhost:3000/', 'echo-protocol');
+
+client.connect('ws://thread-heady-longship.glitch.me/',
+    null,
+    null,
+    {'User-Agent': 'WebSocket Client'},
+    null
+);

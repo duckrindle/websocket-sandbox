@@ -1,5 +1,6 @@
 var WebSocket = require('faye-websocket');
-var client = new WebSocket.Client('ws://localhost:3000/');
+//var client = new WebSocket.Client('ws://localhost:3000/');
+var client = new WebSocket.Client('ws://thread-heady-longship.glitch.me/');
 
 client.on('open', function(message) {
   console.log('Connection established!');
